@@ -1,0 +1,2 @@
+# PROY-G02
+Desarrollo del GRUPO 02 del HACKATHON ITSC 2020
