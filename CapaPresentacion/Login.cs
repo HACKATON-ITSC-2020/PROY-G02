@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace HackatonGrupo02
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         MetodosUsuario metUsuario = new MetodosUsuario();
 
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
