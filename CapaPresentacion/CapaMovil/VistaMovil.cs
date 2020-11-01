@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using HackatonGrupo02.CapaNegocio;
 using HackatonGrupo02.CapaPresentacion;
-using HackatonGrupo02.Modelo;
+using HackatonGrupo02.CapaDatos;
 
 namespace HackatonGrupo02.CapaPresentacion
 {

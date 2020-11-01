@@ -28,14 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.SuspendLayout();
+            // 
+            // entityCommand1
+            // 
+            this.entityCommand1.CommandTimeout = 0;
+            this.entityCommand1.CommandTree = null;
+            this.entityCommand1.Connection = null;
+            this.entityCommand1.EnablePlanCaching = true;
+            this.entityCommand1.Transaction = null;
             // 
             // PrincipalMovil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::HackatonGrupo02.Properties.Resources._444;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(375, 727);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -47,5 +55,6 @@
         }
 
         #endregion
+        private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
     }
 }

@@ -1,4 +1,4 @@
-﻿using HackatonGrupo02.Modelo;
+﻿using HackatonGrupo02.CapaDatos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,6 +14,8 @@ namespace HackatonGrupo02.CapaNegocio
     {
         private SqlCommand Comando = new SqlCommand();
         SqlDataReader LeerFilas;
+        MetodosCajaDeAhorro metCajaAhorro = new MetodosCajaDeAhorro();
+        MetodosCuentaCorriente metCuentaCorriente = new MetodosCuentaCorriente();
 
 
         //metodo para dar de alta en base de datos.
@@ -31,6 +33,12 @@ namespace HackatonGrupo02.CapaNegocio
             Comando.Parameters.AddWithValue("@clave", usuario.clave);
             Comando.ExecuteNonQuery();
             Conexion.Close();
+
+            CajaDeAhorro caja = new CajaDeAhorro(usuario.dni,70000,1);
+            metCajaAhorro.AltaCajaDeAhorro(caja);
+            CuentaCorriente ctaCte = new CuentaCorriente(usuario.dni,0,1);
+            metCuentaCorriente.AltaCuentaCorriente(ctaCte);
+
             MessageBox.Show("Insertado con exito!");
         }
       
@@ -79,7 +87,6 @@ namespace HackatonGrupo02.CapaNegocio
             LeerFilas = Comando.ExecuteReader();
             if (LeerFilas.Read())
             {
-                MessageBox.Show("Ingresado con exito!");
                 LeerFilas.Close();
                 Conexion.Close();
                 return true;
@@ -94,7 +101,33 @@ namespace HackatonGrupo02.CapaNegocio
 
         }
 
+        //metodo para crear un usuario utilizando para hacer un get
+        public Usuario CrearUsuario(string usuarioNombre)
+        {
+            Usuario us = new Usuario();
 
+            Comando.Connection = Conexion;
+            Conexion.Open();
+            Comando.CommandText = "LeerUsuario";
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.Parameters.Clear();
+            Comando.Parameters.AddWithValue("@usuario", usuarioNombre);
+            LeerFilas = Comando.ExecuteReader();
+
+            while (LeerFilas.Read())
+            {
+                us.nombre= LeerFilas.GetString(1);
+                us.apellido = LeerFilas.GetString(2);
+                us.dni = LeerFilas.GetString(3);
+                us.usuario1 = LeerFilas.GetString(4);
+                us.clave = LeerFilas.GetString(5);
+                
+            }
+            LeerFilas.Close();
+            Conexion.Close();
+
+            return us;
+        }
 
 
 

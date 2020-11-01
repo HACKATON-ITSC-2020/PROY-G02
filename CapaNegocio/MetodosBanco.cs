@@ -1,4 +1,4 @@
-﻿using HackatonGrupo02.Modelo;
+﻿using HackatonGrupo02.CapaDatos;
 using System;
 using System.Collections.Generic;
 using System.Data;

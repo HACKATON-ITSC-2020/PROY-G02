@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HackatonGrupo02.Modelo;
+using HackatonGrupo02.CapaDatos;
 namespace HackatonGrupo02.CapaNegocio
 {
     class MetodosTipoTarjeta : ConexionBBDD

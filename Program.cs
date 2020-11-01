@@ -1,9 +1,10 @@
-﻿using HackatonGrupo02.CapaPresentacion;
+﻿using HackatonGrupo02;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace HackatonGrupo02
 {
@@ -17,7 +18,7 @@ namespace HackatonGrupo02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VistaMovilInicio());
+            Application.Run(new FormPrincipal());
         }
     }
 }

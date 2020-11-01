@@ -1,5 +1,5 @@
 ﻿using HackatonGrupo02.CapaNegocio;
-using HackatonGrupo02.Modelo;
+using HackatonGrupo02.CapaDatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
