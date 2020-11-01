@@ -39,6 +39,7 @@ namespace HackatonGrupo02.Modelo
             this.usuario1 = usuario1;
             this.clave = clave;
         }
+
         //constructor para editar usuario
         public Usuario(int idUsuario, string nombre, string apellido, string dni, string usuario1, string clave)
         {
@@ -50,6 +51,15 @@ namespace HackatonGrupo02.Modelo
             this.clave = clave;
         }
 
-        
+        //Constructor para login
+        public Usuario(string usuario1, string clave)
+        {
+            this.usuario1 = usuario1;
+            this.clave = clave;
+        }
+    
+
+
+
     }
 }
