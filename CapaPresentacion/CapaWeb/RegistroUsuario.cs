@@ -32,5 +32,24 @@ namespace HackatonGrupo02.CapaPresentacion.CapaWeb
         {
             this.Close();
         }
+
+        private void RegistroUsuario_Load(object sender, EventArgs e)
+        {
+            IniciarTextBox();
+        }
+
+        private void IniciarTextBox()
+        {
+            MetodosGenericos.Init(txtUsuario, "Ingrese su usuario");
+            MetodosGenericos.Init(txtNombre, "Ingrese su nombre");
+            MetodosGenericos.Init(txtDni, "Ingrese su DNI");
+            MetodosGenericos.Init(txtApellido, "Ingrese su apellido");
+            MetodosGenericos.Init(txtClave, "Ingrese su Clave");
+        }
+
+        private void btnVolver_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -29,6 +29,11 @@ namespace HackatonGrupo02
         {
             lbFecha.Text = "Fecha " + DateTime.Now.ToString("dd-MM-yyyy");
             DesactivarPanelPrincipal();
+          
+            IniciarTextBox();
+
+            
+
         }
 
         public FormPrincipal()
@@ -73,8 +78,6 @@ namespace HackatonGrupo02
         private void ActivarBotones()
         {
             btn_depositar.Enabled = true;
-            btn_transferir.Enabled = true;
-            btn_extraer.Enabled = true;
             btn_comparacion.Enabled = true;
             btn_rendimiento.Enabled = true;
             btn_tarjetas.Enabled = true;
@@ -130,7 +133,7 @@ namespace HackatonGrupo02
         private void btn_comparacion_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, ColoresRGB.color4);
-            abrirFormHijo(new Construccion());
+            abrirFormHijo(new Comparacion());
         }
         private void btn_rendimiento_Click(object sender, EventArgs e)
         {
@@ -158,11 +161,23 @@ namespace HackatonGrupo02
         }
         #endregion
 
+        #region METODOS
+        //metodo para generar efecto en los textbox para ingresar texto y que cambie de color.
+        private void IniciarTextBox()
+        {
+            MetodosGenericos.Init(txtUsuario, "Ingrese su usuario");
+            MetodosGenericos.Init(txtPass, "Ingrese su Clave");
+        }
+
+
+        #endregion
+
         // imagen logo
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Reset();
         }
+
         private void Reset()
         {
             DesactivarBoton();
@@ -172,15 +187,16 @@ namespace HackatonGrupo02
         //login usuario
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+
             Usuario usuario = new Usuario(txtUsuario.Text, txtPass.Text);
             if (metUsuario.VerificarPassword(usuario))
             {
                 usuarioNuevo = metUsuario.CrearUsuario(txtUsuario.Text);
 
                 CajaDeAhorro cajaDeAhorro = metCaja.CrearCaja(usuarioNuevo.dni);
-                
+
                 lblBienvenido.Text = "BIENVENIDO: " + usuarioNuevo.nombre.ToUpper();
-                lblSaldo.Text = "Su saldo es: " + cajaDeAhorro.saldo ;
+                lblSaldo.Text = "Su saldo es: " + cajaDeAhorro.saldo;
 
                 ActivarBotones();
             }
@@ -198,14 +214,14 @@ namespace HackatonGrupo02
        private void DesactivarPanelPrincipal()
         {
             lblBienvenido.Text = "";
-            panelCuentas.Visible = false;
+            //panelCuentas.Visible = false;
             lblSaldo.Text = "";
             lblCA.Text = "";
         }
 
         private void ActivarPanelPrincipal()
         {
-            panelCuentas.Visible = true;
+            //panelCuentas.Visible = true;
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
@@ -229,6 +245,6 @@ namespace HackatonGrupo02
             
         }
 
-
+    
     }
 }

@@ -102,6 +102,12 @@
     <Compile Include="CapaPresentacion\CapaMovil\VistaMovil.Designer.cs">
       <DependentUpon>VistaMovil.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaPresentacion\CapaWeb\Comparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\CapaWeb\Comparacion.Designer.cs">
+      <DependentUpon>Comparacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaPresentacion\CapaWeb\Construccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\CapaMovil\VistaMovil.resx">
       <DependentUpon>VistaMovil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\CapaWeb\Comparacion.resx">
+      <DependentUpon>Comparacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\CapaWeb\Construccion.resx">
       <DependentUpon>Construccion.cs</DependentUpon>
