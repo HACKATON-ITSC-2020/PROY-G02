@@ -198,7 +198,6 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Seleccione la opcion de pago",
             "Tarjeta visa ",
             "Tarjeta Mastercard",
             "Efecto o transferencia"});
@@ -206,6 +205,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(199, 28);
             this.comboBox1.TabIndex = 18;
+            this.comboBox1.Text = "Seleccione una opcion";
             // 
             // label7
             // 

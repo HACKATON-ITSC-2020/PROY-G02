@@ -29,7 +29,15 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btn_tarjetas = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btn_movimientos = new FontAwesome.Sharp.IconButton();
+            this.btn_rendimiento = new FontAwesome.Sharp.IconButton();
+            this.btn_comparacion = new FontAwesome.Sharp.IconButton();
+            this.btn_depositar = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.btn_home = new System.Windows.Forms.PictureBox();
             this.panelEscritorio = new System.Windows.Forms.Panel();
             this.lblCA = new System.Windows.Forms.Label();
             this.lblSaldo = new System.Windows.Forms.Label();
@@ -40,18 +48,10 @@
             this.btnIngreso = new System.Windows.Forms.Button();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.btn_tarjetas = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.btn_movimientos = new FontAwesome.Sharp.IconButton();
-            this.btn_rendimiento = new FontAwesome.Sharp.IconButton();
-            this.btn_comparacion = new FontAwesome.Sharp.IconButton();
-            this.btn_depositar = new FontAwesome.Sharp.IconButton();
-            this.btn_home = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_home)).BeginInit();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -70,144 +70,8 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(225, 624);
+            this.panelMenu.Size = new System.Drawing.Size(225, 694);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btn_home);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(225, 110);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelEscritorio
-            // 
-            this.panelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
-            this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEscritorio.Location = new System.Drawing.Point(225, 0);
-            this.panelEscritorio.Margin = new System.Windows.Forms.Padding(2);
-            this.panelEscritorio.Name = "panelEscritorio";
-            this.panelEscritorio.Size = new System.Drawing.Size(749, 624);
-            this.panelEscritorio.TabIndex = 1;
-            // 
-            // lblCA
-            // 
-            this.lblCA.AutoSize = true;
-            this.lblCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.lblCA.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCA.ForeColor = System.Drawing.Color.White;
-            this.lblCA.Location = new System.Drawing.Point(208, 81);
-            this.lblCA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCA.Name = "lblCA";
-            this.lblCA.Size = new System.Drawing.Size(79, 23);
-            this.lblCA.TabIndex = 1;
-            this.lblCA.Text = "Saldo ca";
-            // 
-            // lblSaldo
-            // 
-            this.lblSaldo.AutoSize = true;
-            this.lblSaldo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.lblSaldo.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldo.ForeColor = System.Drawing.Color.White;
-            this.lblSaldo.Location = new System.Drawing.Point(11, 82);
-            this.lblSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSaldo.Name = "lblSaldo";
-            this.lblSaldo.Size = new System.Drawing.Size(77, 23);
-            this.lblSaldo.TabIndex = 0;
-            this.lblSaldo.Text = "Saldo cc";
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 28F);
-            this.lblBienvenido.ForeColor = System.Drawing.Color.White;
-            this.lblBienvenido.Location = new System.Drawing.Point(7, 34);
-            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(225, 46);
-            this.lblBienvenido.TabIndex = 0;
-            this.lblBienvenido.Text = "BIENVENIDO";
-            // 
-            // lbFecha
-            // 
-            this.lbFecha.AutoSize = true;
-            this.lbFecha.Font = new System.Drawing.Font("Humnst777 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFecha.ForeColor = System.Drawing.Color.White;
-            this.lbFecha.Location = new System.Drawing.Point(11, 12);
-            this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(62, 22);
-            this.lbFecha.TabIndex = 11;
-            this.lbFecha.Text = "fecha";
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelTop.Controls.Add(this.lblCA);
-            this.panelTop.Controls.Add(this.lbFecha);
-            this.panelTop.Controls.Add(this.lblSaldo);
-            this.panelTop.Controls.Add(this.btnRegistrar);
-            this.panelTop.Controls.Add(this.lblBienvenido);
-            this.panelTop.Controls.Add(this.btnIngreso);
-            this.panelTop.Controls.Add(this.txtPass);
-            this.panelTop.Controls.Add(this.txtUsuario);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(225, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(749, 111);
-            this.panelTop.TabIndex = 1;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegistrar.ForeColor = System.Drawing.Color.Black;
-            this.btnRegistrar.Location = new System.Drawing.Point(639, 59);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(100, 41);
-            this.btnRegistrar.TabIndex = 10;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnIngreso
-            // 
-            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnIngreso.Location = new System.Drawing.Point(639, 6);
-            this.btnIngreso.Name = "btnIngreso";
-            this.btnIngreso.Size = new System.Drawing.Size(100, 45);
-            this.btnIngreso.TabIndex = 7;
-            this.btnIngreso.Text = "Ingresar";
-            this.btnIngreso.UseVisualStyleBackColor = true;
-            this.btnIngreso.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
-            // txtPass
-            // 
-            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtPass.Location = new System.Drawing.Point(460, 56);
-            this.txtPass.Multiline = true;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '9';
-            this.txtPass.Size = new System.Drawing.Size(173, 46);
-            this.txtPass.TabIndex = 9;
-            this.txtPass.Click += new System.EventHandler(this.txtPass_Click);
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtUsuario.Location = new System.Drawing.Point(460, 6);
-            this.txtUsuario.Multiline = true;
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(173, 46);
-            this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "ingrese usuario";
-            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // iconButton2
             // 
@@ -273,7 +137,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 55;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 575);
+            this.iconButton1.Location = new System.Drawing.Point(0, 645);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
@@ -390,6 +254,16 @@
             this.btn_depositar.UseVisualStyleBackColor = true;
             this.btn_depositar.Click += new System.EventHandler(this.btn_depositar_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.btn_home);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(225, 110);
+            this.panelLogo.TabIndex = 0;
+            // 
             // btn_home
             // 
             this.btn_home.BackColor = System.Drawing.Color.White;
@@ -404,11 +278,137 @@
             this.btn_home.TabStop = false;
             this.btn_home.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panelEscritorio
+            // 
+            this.panelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
+            this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEscritorio.Location = new System.Drawing.Point(225, 0);
+            this.panelEscritorio.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEscritorio.Name = "panelEscritorio";
+            this.panelEscritorio.Size = new System.Drawing.Size(749, 694);
+            this.panelEscritorio.TabIndex = 1;
+            // 
+            // lblCA
+            // 
+            this.lblCA.AutoSize = true;
+            this.lblCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lblCA.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCA.ForeColor = System.Drawing.Color.White;
+            this.lblCA.Location = new System.Drawing.Point(208, 81);
+            this.lblCA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCA.Name = "lblCA";
+            this.lblCA.Size = new System.Drawing.Size(79, 23);
+            this.lblCA.TabIndex = 1;
+            this.lblCA.Text = "Saldo ca";
+            // 
+            // lblSaldo
+            // 
+            this.lblSaldo.AutoSize = true;
+            this.lblSaldo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lblSaldo.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.ForeColor = System.Drawing.Color.White;
+            this.lblSaldo.Location = new System.Drawing.Point(11, 82);
+            this.lblSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSaldo.Name = "lblSaldo";
+            this.lblSaldo.Size = new System.Drawing.Size(77, 23);
+            this.lblSaldo.TabIndex = 0;
+            this.lblSaldo.Text = "Saldo cc";
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 28F);
+            this.lblBienvenido.ForeColor = System.Drawing.Color.White;
+            this.lblBienvenido.Location = new System.Drawing.Point(7, 34);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(225, 46);
+            this.lblBienvenido.TabIndex = 0;
+            this.lblBienvenido.Text = "BIENVENIDO";
+            // 
+            // lbFecha
+            // 
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Font = new System.Drawing.Font("Humnst777 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.ForeColor = System.Drawing.Color.White;
+            this.lbFecha.Location = new System.Drawing.Point(11, 12);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(62, 22);
+            this.lbFecha.TabIndex = 11;
+            this.lbFecha.Text = "fecha";
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelTop.Controls.Add(this.lblCA);
+            this.panelTop.Controls.Add(this.lbFecha);
+            this.panelTop.Controls.Add(this.lblSaldo);
+            this.panelTop.Controls.Add(this.btnRegistrar);
+            this.panelTop.Controls.Add(this.lblBienvenido);
+            this.panelTop.Controls.Add(this.btnIngreso);
+            this.panelTop.Controls.Add(this.txtPass);
+            this.panelTop.Controls.Add(this.txtUsuario);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(225, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(749, 111);
+            this.panelTop.TabIndex = 1;
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRegistrar.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistrar.Location = new System.Drawing.Point(639, 61);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(100, 34);
+            this.btnRegistrar.TabIndex = 10;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // btnIngreso
+            // 
+            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnIngreso.Location = new System.Drawing.Point(639, 12);
+            this.btnIngreso.Name = "btnIngreso";
+            this.btnIngreso.Size = new System.Drawing.Size(100, 38);
+            this.btnIngreso.TabIndex = 7;
+            this.btnIngreso.Text = "Ingresar";
+            this.btnIngreso.UseVisualStyleBackColor = true;
+            this.btnIngreso.Click += new System.EventHandler(this.btnIngresar_Click);
+            // 
+            // txtPass
+            // 
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtPass.Location = new System.Drawing.Point(460, 61);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '9';
+            this.txtPass.Size = new System.Drawing.Size(173, 34);
+            this.txtPass.TabIndex = 9;
+            this.txtPass.Click += new System.EventHandler(this.txtPass_Click);
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtUsuario.Location = new System.Drawing.Point(460, 12);
+            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(173, 38);
+            this.txtUsuario.TabIndex = 8;
+            this.txtUsuario.Text = "ingrese usuario";
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 624);
+            this.ClientSize = new System.Drawing.Size(974, 694);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelEscritorio);
             this.Controls.Add(this.panelMenu);
@@ -419,9 +419,9 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).EndInit();
             this.ResumeLayout(false);
 
         }

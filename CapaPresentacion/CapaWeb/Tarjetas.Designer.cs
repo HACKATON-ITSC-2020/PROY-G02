@@ -48,8 +48,9 @@
             // 
             this.panelMargen.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMargen.Location = new System.Drawing.Point(0, 0);
+            this.panelMargen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMargen.Name = "panelMargen";
-            this.panelMargen.Size = new System.Drawing.Size(980, 100);
+            this.panelMargen.Size = new System.Drawing.Size(735, 81);
             this.panelMargen.TabIndex = 5;
             // 
             // lblBienvenido
@@ -58,9 +59,10 @@
             this.lblBienvenido.BackColor = System.Drawing.Color.Transparent;
             this.lblBienvenido.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.Color.Black;
-            this.lblBienvenido.Location = new System.Drawing.Point(112, 217);
+            this.lblBienvenido.Location = new System.Drawing.Point(84, 185);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(330, 30);
+            this.lblBienvenido.Size = new System.Drawing.Size(260, 23);
             this.lblBienvenido.TabIndex = 7;
             this.lblBienvenido.Text = "Tarjetas de debito disponibles";
             // 
@@ -74,11 +76,12 @@
             this.btn_debVisa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_debVisa.IconSize = 70;
             this.btn_debVisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_debVisa.Location = new System.Drawing.Point(117, 262);
+            this.btn_debVisa.Location = new System.Drawing.Point(88, 222);
+            this.btn_debVisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_debVisa.Name = "btn_debVisa";
-            this.btn_debVisa.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_debVisa.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_debVisa.Rotation = 0D;
-            this.btn_debVisa.Size = new System.Drawing.Size(78, 62);
+            this.btn_debVisa.Size = new System.Drawing.Size(58, 50);
             this.btn_debVisa.TabIndex = 8;
             this.btn_debVisa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_debVisa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -95,11 +98,12 @@
             this.btn_credMaster.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_credMaster.IconSize = 70;
             this.btn_credMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_credMaster.Location = new System.Drawing.Point(226, 395);
+            this.btn_credMaster.Location = new System.Drawing.Point(170, 330);
+            this.btn_credMaster.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_credMaster.Name = "btn_credMaster";
-            this.btn_credMaster.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_credMaster.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_credMaster.Rotation = 0D;
-            this.btn_credMaster.Size = new System.Drawing.Size(78, 62);
+            this.btn_credMaster.Size = new System.Drawing.Size(58, 50);
             this.btn_credMaster.TabIndex = 9;
             this.btn_credMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_credMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,11 +120,12 @@
             this.btn_debMaster.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_debMaster.IconSize = 70;
             this.btn_debMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_debMaster.Location = new System.Drawing.Point(226, 262);
+            this.btn_debMaster.Location = new System.Drawing.Point(170, 222);
+            this.btn_debMaster.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_debMaster.Name = "btn_debMaster";
-            this.btn_debMaster.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_debMaster.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_debMaster.Rotation = 0D;
-            this.btn_debMaster.Size = new System.Drawing.Size(78, 62);
+            this.btn_debMaster.Size = new System.Drawing.Size(58, 50);
             this.btn_debMaster.TabIndex = 10;
             this.btn_debMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_debMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -137,11 +142,12 @@
             this.btn_credVisa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_credVisa.IconSize = 70;
             this.btn_credVisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_credVisa.Location = new System.Drawing.Point(117, 395);
+            this.btn_credVisa.Location = new System.Drawing.Point(88, 330);
+            this.btn_credVisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_credVisa.Name = "btn_credVisa";
-            this.btn_credVisa.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_credVisa.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_credVisa.Rotation = 0D;
-            this.btn_credVisa.Size = new System.Drawing.Size(78, 62);
+            this.btn_credVisa.Size = new System.Drawing.Size(58, 50);
             this.btn_credVisa.TabIndex = 11;
             this.btn_credVisa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_credVisa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -154,9 +160,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(112, 350);
+            this.label1.Location = new System.Drawing.Point(84, 293);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 30);
+            this.label1.Size = new System.Drawing.Size(264, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "Tarjetas de credito disponibles";
             // 
@@ -170,11 +177,12 @@
             this.btn_credDiscov.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_credDiscov.IconSize = 70;
             this.btn_credDiscov.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_credDiscov.Location = new System.Drawing.Point(335, 395);
+            this.btn_credDiscov.Location = new System.Drawing.Point(251, 330);
+            this.btn_credDiscov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_credDiscov.Name = "btn_credDiscov";
-            this.btn_credDiscov.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_credDiscov.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_credDiscov.Rotation = 0D;
-            this.btn_credDiscov.Size = new System.Drawing.Size(78, 62);
+            this.btn_credDiscov.Size = new System.Drawing.Size(58, 50);
             this.btn_credDiscov.TabIndex = 13;
             this.btn_credDiscov.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_credDiscov.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -191,11 +199,12 @@
             this.btn_credStripe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_credStripe.IconSize = 70;
             this.btn_credStripe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_credStripe.Location = new System.Drawing.Point(444, 395);
+            this.btn_credStripe.Location = new System.Drawing.Point(333, 330);
+            this.btn_credStripe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_credStripe.Name = "btn_credStripe";
-            this.btn_credStripe.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.btn_credStripe.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_credStripe.Rotation = 0D;
-            this.btn_credStripe.Size = new System.Drawing.Size(78, 62);
+            this.btn_credStripe.Size = new System.Drawing.Size(58, 50);
             this.btn_credStripe.TabIndex = 14;
             this.btn_credStripe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_credStripe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -208,9 +217,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(78, 134);
+            this.label2.Location = new System.Drawing.Point(58, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(491, 42);
+            this.label2.Size = new System.Drawing.Size(385, 33);
             this.label2.TabIndex = 15;
             this.label2.Text = "AÑADIR TARJETAS A SU CUENTA";
             // 
@@ -219,9 +229,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.lblCreditoUsuario);
             this.panel1.Controls.Add(this.lblDebitoUsuario);
-            this.panel1.Location = new System.Drawing.Point(12, 510);
+            this.panel1.Location = new System.Drawing.Point(9, 423);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(956, 199);
+            this.panel1.Size = new System.Drawing.Size(717, 162);
             this.panel1.TabIndex = 16;
             // 
             // lblCreditoUsuario
@@ -230,9 +241,10 @@
             this.lblCreditoUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblCreditoUsuario.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreditoUsuario.ForeColor = System.Drawing.Color.Black;
-            this.lblCreditoUsuario.Location = new System.Drawing.Point(26, 128);
+            this.lblCreditoUsuario.Location = new System.Drawing.Point(20, 104);
+            this.lblCreditoUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCreditoUsuario.Name = "lblCreditoUsuario";
-            this.lblCreditoUsuario.Size = new System.Drawing.Size(567, 30);
+            this.lblCreditoUsuario.Size = new System.Drawing.Size(456, 23);
             this.lblCreditoUsuario.TabIndex = 18;
             this.lblCreditoUsuario.Text = "La tarjeta de credito activa en tu cuenta es: NINGUNA";
             // 
@@ -242,17 +254,18 @@
             this.lblDebitoUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblDebitoUsuario.Font = new System.Drawing.Font("Humnst777 BlkCn BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDebitoUsuario.ForeColor = System.Drawing.Color.Black;
-            this.lblDebitoUsuario.Location = new System.Drawing.Point(26, 51);
+            this.lblDebitoUsuario.Location = new System.Drawing.Point(20, 41);
+            this.lblDebitoUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDebitoUsuario.Name = "lblDebitoUsuario";
-            this.lblDebitoUsuario.Size = new System.Drawing.Size(567, 30);
+            this.lblDebitoUsuario.Size = new System.Drawing.Size(456, 23);
             this.lblDebitoUsuario.TabIndex = 17;
             this.lblDebitoUsuario.Text = "La tarjeta de credito activa en tu cuenta es: NINGUNA";
             // 
             // Tarjetas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 721);
+            this.ClientSize = new System.Drawing.Size(735, 599);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_credStripe);
@@ -264,6 +277,7 @@
             this.Controls.Add(this.btn_debVisa);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.panelMargen);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Tarjetas";
             this.Text = "Tarjetas";
             this.panel1.ResumeLayout(false);

@@ -82,6 +82,7 @@ namespace HackatonGrupo02
             btn_rendimiento.Enabled = true;
             btn_tarjetas.Enabled = true;
             btn_movimientos.Enabled = true;
+            iconButton2.Enabled = true;
         }
         private void DesactivarBoton()
         {
@@ -166,7 +167,7 @@ namespace HackatonGrupo02
         private void IniciarTextBox()
         {
             MetodosGenericos.Init(txtUsuario, "Ingrese su usuario");
-            MetodosGenericos.Init(txtPass, "Ingrese su Clave");
+            MetodosGenericos.Init(txtPass, "Password");
         }
 
 
@@ -196,7 +197,7 @@ namespace HackatonGrupo02
                 CajaDeAhorro cajaDeAhorro = metCaja.CrearCaja(usuarioNuevo.dni);
 
                 lblBienvenido.Text = "BIENVENIDO: " + usuarioNuevo.nombre.ToUpper();
-                lblSaldo.Text = "Su saldo es: " + cajaDeAhorro.saldo;
+                lblSaldo.Text = "Tu saldo es: " + cajaDeAhorro.saldo;
 
                 ActivarBotones();
             }
